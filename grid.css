@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
+.tableau{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    background-color: black;
+    grid-template-areas: 
+     "w1 . w4 w4 w4 w4 w4 w4 . w5 w5 w5 w5 w5 . w6 . y1"
+     "w1 . b1 b1 b1 b1 b1 b1 . w2 w2 . b2 b2 b2 . w6 . y1"
+     "w1 . b1 b1 b1 b1 b1 b1 . w2 w2 . b2 b2 b2 . w6 . y1"
+     "n1 w3 w3 n2 w7 w7 w8 y2 y2 r1 r1 r2 w6 y1"
+     "n1 w3 w3 n2 w7 w7 w8 y2 y2 r1 r1 r2 w6 y1"
+     "n1 w3 w3 n2 w7 w7 w8 y2 y2 r1 r1 r2 w6 y1"
+     "n1 w3 w3 n2 w7 w7 w8 y2 y2 r1 r1 r2 w6 y1"
+     "n1 w3 w3 n2 w7 w7 w8 y2 y2 r1 r1 r2 w6 y1"
+     "n1 w9 w9 n2 y3 r2 r2 b3 b3 w10 w10 w11 n3 n3"
+     "n1 w9 w9 n2 y3 r2 r2 b3 b3 w10 w10 w11 n3 n3"
+     "w12 r3 r3 n2 y4 w13 w13 w13 w14 w14 b4 y5 w15 w15"
+     "w12 r3 r3 n2 y4 w13 w13 w13 w14 w14 b4 y5 w15 w15"
+     "w12 r3 r3 n2 y4 w13 w13 w13 w14 w14 b4 y5 w15 w15"
+     "w12 r3 r3 n2 y4 r4 r4 n4 n4 n4 n4 w16 w16 w16"
+     "w17 w17 w17 w17 y4 r4 r4 n4 n4 n4 w16 w16 w16"
+     ;
+
+     width: 550px;
+     height: 500px;
+    
+}
+
+.area-w1{ background-color:white; grid-area: w1;}
+.area-w4{ background-color:white; grid-area: w4;}
+.area-w5{ background-color:white; grid-area: w5;}
+.area-w3{ background-color:white; grid-area: w3;}
+.area-w7{ background-color:white; grid-area: w7;}
+.area-w8{ background-color:white; grid-area: w8;}
+.area-w6{ background-color:white; grid-area: w6;}
+.area-w9{ background-color:white; grid-area: w9;}
+.area-w10{ background-color:white; grid-area: w10;}
+.area-w11{ background-color:white; grid-area: w11;}
+.area-w12{ background-color:white; grid-area: w12;}
+.area-w13{ background-color:white; grid-area: w13;}
+.area-w14{ background-color:white; grid-area: w14;}
+.area-w15{ background-color:white; grid-area: w15;}
+.area-w16{ background-color:white; grid-area: w16;}
+.area-w17{ background-color:white; grid-area: w17;}
+
+.area-b1{ background-color:blue; grid-area: b1;}
+.area-b2{ background-color:blue; grid-area: b2;}
+.area-b3{ background-color:blue; grid-area: b3;}
+.area-b4{ background-color:blue; grid-area: b4;}
+
+.area-r1{ background-color:red; grid-area: r1;}
+.area-r2{ background-color:red; grid-area: r2;}
+.area-r3{ background-color:red; grid-area: r3;}
+.area-r4{ background-color:red; grid-area: r4;}
+
+.area-y1{ background-color:yellow; grid-area: w1;}
+.area-y2{ background-color:yellow; grid-area: w4;}
+.area-y3{ background-color:yellow; grid-area: w5;}
+.area-y4{ background-color:yellow; grid-area: w3;}
+.area-y5{ background-color:yellow; grid-area: w7;}
+
+.area-n1{ background-color:black; grid-area: r1;}
+.area-n2{ background-color:black; grid-area: r2;}
+.area-n3{ background-color:black; grid-area: r3;}
+.area-n4{ background-color:black; grid-area: r4;}
+
